@@ -1,31 +1,23 @@
 import { useState } from "react";
 import "./App.css";
-import { Button } from "reactstrap";
+
+import StartPage from "../src/pages/mobile-first/index";
+import SucsessPage from "../src/pages/mobile-succsess/index"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   const [count, setCount] = useState(0);
 
+
   return (
     <>
-     <div>
-      <h1>Hello Reactstrap!</h1>
-      <Button color="primary">Click me</Button>
-    </div>
-
-      Stay updated! Join 60,000+ product managers receiving monthly updates on:
-      Product discovery and building what matters Measuring to ensure updates
-      are a success And much more! Email address email@company.com Subscribe to
-      monthly newsletter Sign-up form end Success message start Thanks for
-      subscribing! A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-      Dismiss message Success message end
-      <div class="attribution">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+      <Router>
+        <Routes>
+      <Route path="/home" Component={StartPage} />
+      <Route path="/congratulations" Component={SucsessPage} />
+      </Routes>
+      </Router>
     </>
   );
 }

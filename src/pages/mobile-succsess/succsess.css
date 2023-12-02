@@ -1,0 +1,27 @@
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+section {
+  margin: 20px;
+}
+
+
+.tittle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.paragraph {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 263px;
+}
+
+.checkmark {
+  margin-top: 149px;
+  margin-bottom: 40px;
+}
