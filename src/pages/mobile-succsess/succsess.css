@@ -9,7 +9,7 @@ section {
 }
 
 
-.tittle {
+.titulo {
   font-size: 40px;
   font-weight: bold;
 }
@@ -24,4 +24,45 @@ section {
 .checkmark {
   margin-top: 149px;
   margin-bottom: 40px;
+}
+
+.desktopButtonFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .cardCongrats {
+    background-color: white;
+    width: 504px;
+    height: 530px;
+    border-radius: 36px;
+  }
+  .paragraph {
+    margin-left: 60px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+  }
+  .checkmark {
+    margin: 60px;
+  }
+  .pageCongrats {
+    display: flex;
+    justify-content: center;
+    padding-top: 30%;
+  }
+  .titulo {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .desktopButtonFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newButton {
+    width: 80%;
+  }
 }

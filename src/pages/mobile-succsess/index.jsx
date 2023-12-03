@@ -23,14 +23,18 @@ const Mobile_approved = () => {
   return (
     
     <>
-      <section>
+      <section className="pageCongrats">
+      <div className="cardCongrats">
       <img src={CheckMark} className="checkmark"alt="" />
-      <h1 className="tittle">Thanks for subscribing!</h1>
+      <h1 className="titulo">Thanks for subscribing!</h1>
       <p className="paragraph">
         A confirmation email has been sent to {email}. Please open
         it and click the button inside to confirm your subscription
       </p>
-      <Button href="/home" style={buttonStyle}>Dismiss message</Button>
+      <div className="desktopButtonFlex">
+      <Button href="/home" style={buttonStyle} className="newButton">Dismiss message</Button>
+      </div>
+      </div>
       </section>
     </>
   );

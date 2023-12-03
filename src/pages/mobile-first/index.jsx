@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 const Mobile_first = () => {
   const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
-  const [count, setCount] = useState(0);
   const buttonStyle = {
     backgroundColor: "#242742",
     textAlign: "center",
