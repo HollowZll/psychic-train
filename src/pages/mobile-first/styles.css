@@ -37,10 +37,19 @@ p {
   font-size: 100px;
 }
 
+
+
 .subscibeButton {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1.5s;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#ff644a, #ff537a);
+  box-shadow: 6px 3px 20px #ff537a;
+
 }
 
 .imageDesktop {
